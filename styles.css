@@ -1,5 +1,6 @@
 img {
     width: 100vw;
+    height: 800px;
     transform: translateX(50%);
     opacity: 0;
     transition: all 0.5s;

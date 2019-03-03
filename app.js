@@ -4,13 +4,16 @@ const lazyLoad = target => {
     const io = new IntersectionObserver((entries, observer) => {
 
         entries.forEach(entry => {
+
             if (entry.isIntersecting) {
                 const img = entry.target;
-                img.setAttribute('src', img.dataset.lazy);
+
+                img.setAttribute('src', img.dataset.src);
                 img.classList.add('fade');
 
-                observer.disconnect();
+                observer.unobserve(entry.target);
             }
+
         });
 
     });
