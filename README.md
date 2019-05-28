@@ -1,4 +1,4 @@
-# PluginVM
+# Image Lazy Loader
 It's an Image lazy loader made with javascript, it loads images as you scroll down.
 
 ## Compatibility
